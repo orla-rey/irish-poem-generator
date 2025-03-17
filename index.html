@@ -7,16 +7,17 @@
   <title>AI Poem Generator</title>
 </head>
 <body>
+  <div class="container">
   <header>
     <h1>Welcome to the AI Irish Poem Generator</h1>
   </header>  
 
   <main>
     <form action="">
-      <input type="text" placeholder="Enter the topic for the Irish Poem" autofocus required autocomplete="off">
-      <input type="submit">
+      <input type="text" placeholder="Enter the topic for the Irish Poem" autofocus required autocomplete="off" class="prompt">
+      <input type="submit" class="submit-button">
     </form>
-    <div>
+    <div class="poem">
       Example Poem:
     <br />
       THE RAILWAY CHILDREN by Seamus Heaney
@@ -47,7 +48,7 @@
   </a> and is <a href="https://github.com/orla-rey/irish-poem-generator" target="_blank">open-sourced on Github</a> 
   and is hosted on <a href="https://aiirishpoemgenerator.netlify.app/" target="_blank">Netlify</a>
 </footer>
-
+</div>
   <script src="src/index.js"></script>
 </body>
 </html>
