@@ -1,12 +1,33 @@
+function displayPoem(response) {
+
+ console.log("poem generated");
+
+   new Typewriter("#poem", {
+     strings: [response.data.answer],
+     autoStart: true,
+     delay: 1,
+     cursor: "",
+     pauseFor: 100000,
+   });
+}
+
 function generatePoem(event) {
   event.preventDefault();
 
-  new Typewriter("#poem", {
-    strings: ["Generating Poem"],
-    autoStart: true,
-    delay: 1,
-    cursor: "",
-  });
+  let promptInput = document.querySelector("#user-prompt");
+  let apiKey = "1c21507bfe367ft66ea583e00ofa422f";
+  let prompt = `User instructions are: Generate an Irish poem about ${promptInput.value}`;
+  let context = "You are an Irish poem expert and love to write short poems. Your mission is to generate a short Irish Poem in basic HTML and separate each line with <br />. Make sure to follow the user instructions. Please do not generating anything mentioning HTML, only generate the poem. The poem doe not need to be in quotes at all. Please always include a title inside <strong> element.";
+  let apiUrl =
+    `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  console.log("Generating Poem");  
+  console.log(`Prompt: ${prompt}`);
+  console.log(`Context: ${context}`);
+
+  axios.get(apiUrl).then(displayPoem);
+
+ 
   
 }
 
