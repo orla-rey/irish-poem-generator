@@ -1,6 +1,6 @@
 body {
-  background-color: #F8F3F1;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #f8f3f1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
 }
 
 header {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -24,24 +24,23 @@ h1 {
   color: #000033;
 }
 
-main{
+main {
   margin-bottom: 30px;
 }
 
 form {
   padding: 30px 30px 5px 30px;
   display: flex;
-  
 }
 
 small {
-margin-bottom: 30px;
-padding: 50px;
+  margin-bottom: 30px;
+  padding: 50px;
 }
 
 .prompt {
   padding: 15px;
-  border: 1px solid #D4D4D4;
+  border: 1px solid #d4d4d4;
   width: 80%;
   font-size: 16px;
   border-radius: 25px;
@@ -52,18 +51,17 @@ padding: 50px;
 .submit-button {
   margin-left: 10px;
   background-color: #507251;
-  color: #F0F0F0;
+  color: #f0f0f0;
   border: none;
   border-radius: 25px;
   padding: 14px 25px;
   width: 120px;
   font-size: 16px;
-
 }
 
 .poem {
   font-size: 14px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding: 20px;
   line-height: 1.5;
   font-weight: 400;
@@ -83,7 +81,7 @@ footer {
 }
 
 .generating {
- animation: blink 1s step-start 0s infinite;
+  animation: blink 1s step-start 0s infinite;
 }
 
 @keyframes blink {
@@ -91,4 +89,3 @@ footer {
     opacity: 0;
   }
 }
-
